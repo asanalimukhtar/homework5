@@ -5,6 +5,7 @@ public class MarkerFactory {
     private static final Map<String, Marker> markers = new HashMap<>();
     public static Marker getMarker(String key) {
 
+        // If marker style for this type doesn't exist, create it.
         markers.putIfAbsent(key, createMarker(key));
         return markers.get(key);
     }
@@ -20,6 +21,7 @@ public class MarkerFactory {
                 return new MapMarker(key, "DefaultIcon.png", "Black", "Regular");
         }
     }
+    // Returns the number of unique marker style objects created
     public static int getUniqueMarkerCount() {
         return markers.size();
     }
