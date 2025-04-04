@@ -1,8 +1,7 @@
 // AuthProxy restricts upload and change operations to logged-in agents.
 public class AuthProxy implements Img {
-    private Img img;
-    private boolean auth; // true if agent is logged in
-
+    Img img;
+    boolean auth; // true if agent is logged in
     public AuthProxy(Img img, boolean auth) {
         this.img = img;
         this.auth = auth;
