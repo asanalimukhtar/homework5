@@ -10,9 +10,10 @@ public class MapMarker implements Marker {
         this.color = color;
         this.labelStyle = labelStyle;
     }
-
     @Override
     public void draw(int x, int y) {
-        System.out.println("Drawing " + type + " marker at (" + x + ", " + y + ")");
+        System.out.println("Drawing " + type + " marker with icon '" + icon + "', color '" + color + "', label style '" + labelStyle
+                + "' at (" + x + ", " + y + ")");
+
     }
 }
