@@ -1,6 +1,6 @@
-// RealImg is the real object that represents a high-res property image.
+// RealImg is the real object that represents a high-res property image
 public class RealImg implements Img {
-    private String name;
+    String name;
 
     public RealImg(String name) {
         this.name = name;

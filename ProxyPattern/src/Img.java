@@ -1,4 +1,4 @@
-// Define the IImage interface
+// Define interface
 public interface Img {
     void showThumb();    // Display low-res thumbnail
     void zoom();         // Display full-res image on demand

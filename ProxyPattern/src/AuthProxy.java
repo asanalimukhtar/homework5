@@ -12,25 +12,22 @@ public class AuthProxy implements Img {
     public void showThumb() {
         img.showThumb();
     }
-
     @Override
     public void zoom() {
         img.zoom();
     }
-
     @Override
     public void up(String file) {
         if (!auth) {
-            System.out.println("Access denied: Not logged in.");
+            System.out.println("You don't have access:(");
         } else {
             img.up(file);
         }
     }
-
     @Override
     public void change(String file) {
         if (!auth) {
-            System.out.println("Access denied: Not logged in.");
+            System.out.println("You don't have access:(");
         } else {
             img.change(file);
         }

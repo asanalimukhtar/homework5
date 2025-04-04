@@ -1,7 +1,7 @@
-// ImgProxy implements IImage and provides lazy loading functionality.
+// ImgProxy implements Img and provides lazy loading functionality
 public class ImgProxy implements Img {
-    private String name;
-    private RealImg real;
+    String name;
+    RealImg real;
 
     public ImgProxy(String name) {
         this.name = name;
